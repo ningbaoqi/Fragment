@@ -1,18 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radiogroup"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RadioButton
+        android:id="@+id/first"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_weight="1"
+        android:background="@drawable/radio_press"
+        android:button="@null"
+        android:drawableTop="@mipmap/channel2"
+        android:gravity="center_horizontal"
+        android:text="静态加载"
+        android:textColor="#ffffff"></RadioButton>
 
-</android.support.constraint.ConstraintLayout>
+    <RadioButton
+        android:id="@+id/second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/radio_press"
+        android:button="@null"
+        android:drawableTop="@mipmap/channel3"
+        android:gravity="center_horizontal"
+        android:text="动态加载"
+        android:textColor="#ffffff"></RadioButton>
+
+    <RadioButton
+        android:id="@+id/third"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/radio_press"
+        android:button="@null"
+        android:drawableTop="@mipmap/channel4"
+        android:gravity="center_horizontal"
+        android:text="生命周期"
+        android:textColor="#ffffff"></RadioButton>
+
+    <RadioButton
+        android:id="@+id/forth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/radio_press"
+        android:button="@null"
+        android:drawableTop="@mipmap/channel5"
+        android:gravity="center_horizontal"
+        android:text="传值通信"
+        android:textColor="#ffffff"></RadioButton>
+</RadioGroup>
