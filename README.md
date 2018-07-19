@@ -4,3 +4,5 @@
 + [Fragment静态加载](https://github.com/ningbaoqi/Fragment/commit/076b5ea97272510724bbbb4535b51818c4538bc8)
 ### Fragment动态加载
 + [Fragment动态加载](https://github.com/ningbaoqi/Fragment/commit/37495f35d929bdb965f8cf7ebf7f6784946bd2a8)
+### FragmentPagerAdapter与FragmentStatePagerAdapter区别
++ `FragmentPagerAdapter适用于页面较少的情况`在该类的`destroyItem()方法`中只是调用了`detach()`方法，只是将Fragment的UI和Activity的UI脱离开来，并不会节省内存；`FragmentStatePagerAdapter适用于页面较多的情况`每次切换的时候调用该类的`destroyItem()方法`中真正的`remove()`了`fragment`所以是真正的节省内存的；
