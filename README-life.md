@@ -9,11 +9,11 @@
 |销毁状态|该Fragment被完全删除，或该Fragment所在的Activity被结束|
 
 #### Fragment生命周期
-image1
+![image](https://github.com/ningbaoqi/Fragment/blob/master/gif/pic-3.jpg)
 
 |方法|说明|
 |------|------|
 |onCreateView()|方法返回的必须是Fragment显示的布局的根视图|
 
 #### Activity和Fragment的生命周期总结
-image2
+![image](https://github.com/ningbaoqi/Fragment/blob/master/gif/pic-4.jpg)
